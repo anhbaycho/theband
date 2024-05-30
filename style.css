@@ -29,6 +29,11 @@ body {
     width: 35%;
 }
 
+.navi-bar-content p {
+    font-size: 15px;
+    padding: 16px 24px;
+}
+
 .navi-bar-content h1 {
     font-size: 15px;
     padding: 16px 24px;
@@ -240,9 +245,7 @@ body {
 }
 
 @media only screen and (max-width: 431px) {
-    .navi-bar {
-        display: none;
-    }
+   
 
     .navi-bar-content {
         display: block;
@@ -262,7 +265,7 @@ body {
         height: 5px;
         background-color: #333;
         margin: 6px 0;
-        transition: 0.4s;
+        transition: 0.3s;
     }
 
     .change .bar1 {
@@ -300,5 +303,11 @@ body {
     }
     .contact-button{
         width: 100%;
+    }
+    .navi-bar{
+        top: 0px;
+    }
+    .navi-bar-icon{
+        display: none;
     }
 }

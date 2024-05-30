@@ -15,15 +15,16 @@
 </head>
 
 <body>
-    <div class="container" onclick="myFunction(this)">
+    <div class="container" onclick="myFunction(this),myFunction1()">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
     </div>
 
     <div class="main">
-        <div class="navi-bar">
+        <div class="navi-bar" id="myLinks">
             <div class="navi-bar-content">
+                <p></p>
                 <h1>HOME</h1>
                 <h1>BAND</h1>
                 <h1>TOUR</h1>
@@ -169,6 +170,14 @@
     <script>
         function myFunction(x) {
             x.classList.toggle("change");
+        }
+        function myFunction1() {
+        var y = document.getElementById("myLinks");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
+        }
         }
     </script>
 </body>
